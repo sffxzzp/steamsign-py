@@ -29,8 +29,8 @@ jobs:
         git config --local user.name "$GitName"
         git commit -am "update"
       env:
-        GitEmail: ${{ GitEmail }}
-        GitName: ${{ GitName }}
+        GitEmail: ${{ secrets.GitEmail }}
+        GitName: ${{ secrets.GitName }}
     - name: Git Push
       uses: ad-m/github-push-action@v0.5.0
       with:
