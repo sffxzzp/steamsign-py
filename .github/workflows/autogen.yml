@@ -2,7 +2,7 @@ name: Auto Gen
 
 on:
   schedule:
-    - cron:  '45 6 * * *'
+    - cron:  '0 7 * * *'
 
 jobs:
   build:
