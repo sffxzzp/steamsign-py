@@ -2,7 +2,7 @@ name: Auto Gen
 
 on:
   schedule:
-    - cron:  '0 6 * * *'
+    - cron:  '15 6 * * *'
 
 jobs:
   build:
@@ -22,7 +22,7 @@ jobs:
         SteamID: ${{ secrets.SteamID }}
         small: ${{ secrets.small }}
       run: |
-        python $SteamID $small
+        python steamsign.py $SteamID $small
     - name: Push
       uses: ad-m/github-push-action@v0.5.0
       with:
