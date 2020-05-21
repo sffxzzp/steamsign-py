@@ -4,7 +4,7 @@ from io import BytesIO
 
 class steamsign:
 	def __init__(self, steamid=0, small=True, apikey='824367C3B8AA3C7EADD70FF8A0DB3516'):
-		self.ttf = 'https://cdn.jsdelivr.net/gh/googlefonts/noto-cjk/NotoSansCJK-Regular.ttc'
+		self.ttf = 'https://github.com/googlefonts/noto-cjk/raw/master/NotoSansCJK-Regular.ttc'
 		self.steamid = steamid
 		self.small = small
 		self.apikey = apikey
